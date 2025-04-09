@@ -1,115 +1,75 @@
 body {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     height: 100vh;
-
     margin: 0;
-
-    background: linear-gradient(to right, #f2f2f2, #e0e0e0);
-
+    background: linear-gradient(to right, #1e1e2f, #2c2c3e);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
-
-
 
 .calculator {
-
-    background-color: #fff;
-
-    padding: 20px;
-
-    border-radius: 20px;
-
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-
-    width: 300px;
-
+    background-color: #2e2e3e;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    border: 1px solid #444;
 }
-
-
 
 #display {
-
     width: 100%;
-
-    height: 60px;
-
-    font-size: 2em;
-
+    height: 65px;
+    font-size: 2.2em;
     text-align: right;
-
-    padding: 10px;
-
+    padding: 10px 15px;
     border: none;
-
-    border-radius: 10px;
-
-    margin-bottom: 15px;
-
-    background-color: #f9f9f9;
-
-    box-shadow: inset 0 0 5px #ccc;
-
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #1f1f2d;
+    color: #00ffcc;
+    box-shadow: inset 0 0 8px #0ff;
 }
-
-
 
 .buttons {
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
-    gap: 10px;
-
+    gap: 12px;
 }
-
-
 
 button {
-
-    padding: 20px;
-
-    font-size: 1.2em;
-
+    padding: 22px;
+    font-size: 1.3em;
     border: none;
-
-    border-radius: 10px;
-
+    border-radius: 12px;
     cursor: pointer;
-
-    background-color: #e6e6e6;
-
-    transition: background-color 0.2s ease;
-
+    background-color: #33364a;
+    color: #fff;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 255, 204, 0.1);
 }
-
-
 
 button:hover {
-
-    background-color: #ccc;
-
+    background-color: #444761;
+    transform: scale(1.05);
 }
-
-
 
 button:active {
-
-    background-color: #bbb;
-
+    background-color: #5c5f78;
+    transform: scale(0.98);
 }
 
-
-
 button.zero {
-
     grid-column: span 2;
+}
 
+/* Optional: Highlight operator buttons */
+button.operator {
+    background-color: #00cc99;
+    color: #000;
+    font-weight: bold;
+}
+
+button.operator:hover {
+    background-color: #00e6aa;
 }
